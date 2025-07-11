@@ -37,10 +37,12 @@ public class LoginPage {
 
    public void clearPasswordField(){
         passwordField.clear();
+        passwordField.sendKeys(" ");
    }
 
    public void clearUserNameField(){
         userNameField.clear();
+        userNameField.sendKeys(" ");
    }
 
    public void clickLoginButton(){

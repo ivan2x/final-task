@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/ivancm/IdeaProjects/final-task/pom.xml">
-        <classes/>
+<suite name="Suite" parallel="tests" thread-count="1" verbose="3">
+    <test name="ChromeTest">
+            <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="com.epam.LoginTest"/>
+    </classes>
+    </test>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.epam.LoginTest"/>
+        </classes>
+    </test>
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="com.epam.LoginTest"/>
+        </classes>
     </test>
 </suite>
