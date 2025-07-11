@@ -1,14 +1,13 @@
-# Final task - SauceDemo (Selenium & TestNG)
+# Final Task - SauceDemo (Selenium & TestNG)
 
-Este proyecto contiene pruebas automatizadas para el sitio web 
-SauceDemo (`https://www.saucedemo.com/`) utilizando Selenium WebDriver con Java, 
-gestionado con Maven y ejecutado con TestNG.
+This project contains automated tests for the SauceDemo website (`https://www.saucedemo.com/`) using Selenium WebDriver with Java, managed with Maven, and executed with TestNG.
 
-
-## 🚀 Ejecucion 
-Para ejecutar las pruebas, sigue estos pasos:
-1. Asegúrate de tener Java y Maven instalados en tu sistema.
-2. Ejecuta el siguiente comando en la terminal:
+## 🚀 Execution
+To run the tests, follow these steps:
+1. Ensure you have Java and Maven installed on your system.
+2. Clone the repository:
    ```bash
-   mvn clean test -DsuiteXmlFile=testng.xml 
-   ```
+   git clone https://github.com/ivan2x/final-task.git
+3. Go to the project and execute the following command in your terminal:
+   ```bash
+   mvn clean test
